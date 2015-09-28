@@ -82,7 +82,7 @@
 
               $scope.optionz.paging.count = d.length;
 
-              var set = d.splice(offset, size);
+              var set = d.splice(offset * size, size);
               // only insert items i don't already have
               set.forEach(function(r, i){
                 var idx = i + (offset * size);
